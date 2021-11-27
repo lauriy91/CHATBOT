@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Chatbot</title>
+
+<style type="text/css">
+
+    ::-webkit-scrollbar{
+        width: 0;;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #main{
+        width: 100vw;
+        max-width: 540px;
+        height: 100vh;
+        box-shadow: inset 0 0 10px 4px #1116;
+    }
+
+    h2{
+        text-align: center;
+        font-family: sans-serif;
+        background: fuchsia;
+        color: gainsboro;
+        padding: 8px;
+        text-shadow: 1px 1px 4px #111;
+        margin-bottom: 8px;
+    }
+
+    #msg_area{
+        height: 82%;
+        padding: 0 12px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    #bot{
+        width: 50px;
+        height: 50px;
+        background: url(bot.jpg);
+        background-size: 100%;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    #robot{
+        display: flex;
+        align-items: center;
+    }
+
+    h3{
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    #input{
+        height: 7%;
+        min-height: 42px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin: 8px 16px;
+        border-radius: 32px;
+        background: linear-gradient(#ececee 50%, #1c1f46 50%);
+        box-shadow: inset 0 1px 0 #777;
+    }
+
+    #text{
+        outline: none;
+        font-size: 20px;
+        background: #ececee;
+        color: #333;
+        border-radius: 32px 0 32px 32px;
+        padding: 0 16 px;
+        border:solid 1px #777;
+        border-right: none;
+    }
+
+    #send{
+        outline: none;
+        font-size: 20px;
+        color: #eee;
+        background:#1c1f46;
+        border:none;
+        border-radius: 32px;
+        transition-duration: 0.2s;
+    }
+
+    #send:active{
+        font-size: 16px;
+    }
+
+</style>    
+
+</head>
+<body>
+    <div id="main">
+        <h2>ChatBot</h2>
+
+        <div id="msg_area">
+            <div id="bot"></div>
+            <h3>AIO ChatBot</h3>
+        </div>
+    </div>
+
+    <div id="input">
+        <input type="text" placeholder="New Message" id="text">
+        <button id="send">Send <i class="fa fa-paper-plane"></i></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</body>
+
+<script type="text/javascript">
+
+    function start(){
+        //body...
+
+    }
+
+</script>
+
+</html>
